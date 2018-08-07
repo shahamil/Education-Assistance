@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0928A27A-2670-4BF3-BBBA-BE350341A58D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RattlerManagement</RootNamespace>
+    <AssemblyName>RattlerManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=5.0.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>MySQL Connector\Binaries\.NET 2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cache.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cache.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="Course.cs" />
+    <Compile Include="frmContactIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContactIT.Designer.cs">
+      <DependentUpon>frmContactIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateCourse.designer.cs">
+      <DependentUpon>frmCreateCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateObject.designer.cs">
+      <DependentUpon>frmCreateObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateStudent.designer.cs">
+      <DependentUpon>frmCreateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateTeacher.designer.cs">
+      <DependentUpon>frmCreateTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="Equipment.cs" />
+    <Compile Include="frmManageCourseEnrollment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageCourseEnrollment.Designer.cs">
+      <DependentUpon>frmManageCourseEnrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageMarks.Designer.cs">
+      <DependentUpon>frmManageMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageTeacher.Designer.cs">
+      <DependentUpon>frmManageTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgramMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgramMain.Designer.cs">
+      <DependentUpon>frmProgramMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashPage.Designer.cs">
+      <DependentUpon>frmSplashPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentProfile.designer.cs">
+      <DependentUpon>frmStudentProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeacherProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeacherProfile.Designer.cs">
+      <DependentUpon>frmTeacherProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalPanel.designer.cs">
+      <DependentUpon>frmPrincipalPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cache.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>cache.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContactIT.resx">
+      <DependentUpon>frmContactIT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateCourse.resx">
+      <DependentUpon>frmCreateCourse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateObject.resx">
+      <DependentUpon>frmCreateObject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateStudent.resx">
+      <DependentUpon>frmCreateStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateTeacher.resx">
+      <DependentUpon>frmCreateTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageCourseEnrollment.resx">
+      <DependentUpon>frmManageCourseEnrollment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageMarks.resx">
+      <DependentUpon>frmManageMarks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageTeacher.resx">
+      <DependentUpon>frmManageTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgramMain.resx">
+      <DependentUpon>frmProgramMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashPage.resx">
+      <DependentUpon>frmSplashPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentProfile.resx">
+      <DependentUpon>frmStudentProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeacherProfile.resx">
+      <DependentUpon>frmTeacherProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmToolRental.resx">
+      <DependentUpon>frmToolRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalPanel.resx">
+      <DependentUpon>frmPrincipalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmToolRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmToolRental.Designer.cs">
+      <DependentUpon>frmToolRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs" />
+    <Compile Include="Teacher.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\coursepanel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\equipmentpanel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\form1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\form2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\loginBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\LOGO ICS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\studentspanel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\sprites\teacherspanel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\735420.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cache\splash.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
